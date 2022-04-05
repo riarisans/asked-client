@@ -1,0 +1,9 @@
+node_modules
+.idea
+.DS_Store
+yarn.lock
+package-lock.json
+tests
+dist
+dist/src
+.npmignore
