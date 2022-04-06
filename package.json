@@ -1,31 +1,33 @@
 {
-    "devDependencies": {
-        "@types/node": "^17.0.21",
-        "typescript": "^4.6.2"
-    },
-    "dependencies": {
-        "axios": "^0.26.0"
-    },
-    "scripts": {
-        "build": "tsc"
-    },
-    "name": "asked-client",
-    "version": "1.0.2",
-    "main": "dist/src/index.js",
-    "directories": {
-        "test": "tests"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/riarisans/asked-client.git"
-    },
-    "keywords": [
-        "asked"
-    ],
-    "author": "riarisans",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/riarisans/asked-client/issues"
-    },
-    "homepage": "https://github.com/riarisans/asked-client#readme"
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.26.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node dist/tests/index.spec.js"
+  },
+  "name": "asked-client",
+  "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riarisans/asked-client.git"
+  },
+  "keywords": [
+    "asked"
+  ],
+  "author": "riarisans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riarisans/asked-client/issues"
+  },
+  "homepage": "https://github.com/riarisans/asked-client#readme",
+  "types": "./dist/src/index.d.ts"
 }
