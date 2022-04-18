@@ -11,7 +11,7 @@
     "test": "node dist/tests/index.spec.js"
   },
   "name": "asked-client",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist/src/index.js",
   "directories": {
     "test": "tests"

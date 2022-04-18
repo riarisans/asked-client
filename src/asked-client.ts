@@ -26,13 +26,13 @@ export class RequestClient {
         let encoded = new URLSearchParams({
             reg_name: accountForm.nickname,
             reg_email: accountForm.email,
-            reg_id: accountForm.id,
+            reg_ids: accountForm.id,
             reg_pw: accountForm.password,
         }).toString();
 
         try {
             let result = await this.client.post<any, AxiosResponse<string>>(
-                "/sing_up.php",
+                "/sing_ups.php",
                 encoded,
                 {
                     headers: {
@@ -42,6 +42,7 @@ export class RequestClient {
                     },
                 }
             );
+            console.log(result.data);
 
             if (result.headers["set-cookie"]![1]?.includes("blid")) {
                 return {
@@ -98,7 +99,7 @@ export class RequestClient {
 
         try {
             let result = await this.client.post<any, AxiosResponse<string>>(
-                "/query.php?query=0",
+                "/query.php?query=100",
                 encoded,
                 {
                     headers: {
