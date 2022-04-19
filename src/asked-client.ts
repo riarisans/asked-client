@@ -42,7 +42,6 @@ export class RequestClient {
                     },
                 }
             );
-            console.log(result.data);
 
             if (result.headers["set-cookie"]![1]?.includes("blid")) {
                 return {
